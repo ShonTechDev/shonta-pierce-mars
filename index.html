@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Shonta Pierce's Portfolio</title>
     <meta charset="UTF-8">
@@ -8,54 +7,104 @@
     <!---Font--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Patrick+Hand&family=Rubik+Storm&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Patrick+Hand&family=Rubik+Storm&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-    <nav>
-        <a href="#About">❄ About Me</a>
-        <a href="#Experience">☼ My Experience</a>
-        <a href="#Connect">★ Connect with Me</a>
-    </nav>
-    <h1>Shonta</h1>
-    <img src="images/me-photo.png" class="portrait" alt="photo of author, shonta">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#About">❄ About Me</a></li>
+                <li><a href="#Experience">☼ My Experience</a></li>
+                <li><a href="#Connect">★ Connect with Me</a></li>
+                <li><a href="#Skills">❄ Skills</a></li>
+                <li><a href="#Projects">☼ Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     <section id="About">
-        <h2>About</h2>
-        <p>My name is Shonta and I love Web Development.</p>
+        <div class="portrait-frame">
+            <h1>Shonta</h1>
+            <img src="images/me-photo.png" class="portrait" alt="photo of author, shonta">
+            <h2>About</h2>
+            <p>Hi! My name is Shonta and I love Web Development.</p>
+        </div>
     </section>
-
-    <section id="Experience">
         <h2>Experience</h2>
-        <ul>
+    <section id="Experience">
+        <div class="experience">
+            <div class="experience-header">
+                <h4 class="experience-title">Code The Dream Intro to Programming</h4>
+                <span class="experience-dates">October 2025 - present</span>
+            </div>
+            <p class="experience-description">
+                Learning programming fundamentals: HTML, CSS, and Javascript.
+            </p>
+        </div>
+        <div class="experience">
+            <div class="experience-header">
+                <h4 class="experience-title">100 Devs</h4>
+                <span class="experience-dates">March 2024 - present</span>
+            </div>
+            <p class="experience-description">
+                Collaborating with a communinity of Developers and aspiring Developers to build modern, responsive websites and web applications utilizing best practices. Agile/scrum methodologies. HTML, CSS, JavaScript, CS Theory.
+            </p>
+        </div>
+        <div class="experience">
+            <div class="experience-header">
+                <h4 class="experience-title">Program Manager in Health Tech Company</h4>
+                <span class="experience-dates">Apr 2022 - Dec 2022</span>
+            </div>
+            <p class="experience-description">
+            <ul>
+                <li>Directed and strategically planned Fellowship Program, a primary inbound marketing program designed to fully support and provide the infrastructure Physicians & MH Clinicians need to establish, launch, manage, and grow their Private Practices.</li>
+                <li>Website & Multimedia Content Developer</li>
+                <ul>
+                    <li>Designed and maintained clinician learning community, training, & onboarding platform.</li>
+                    <li>Produced and edited micro-learning videos, tutorials, product, and onboarding content.</li>
+                    <li>Collaborated with Chief Product Officer, engineers, and clinicians to turn complex clinical and product workflows into clear eLearning curricula, live demos, and digital resources.</li>
+                </ul>
+            </ul>
+
+            </p>
+        </div>
+    </section> 
+    <section id="Skills">
+        <h2>Skills</h2>
+        <!-- <ul>
             <li class="html-bar">HTML</li>
             <li class="css-bar">CSS</li>
             <li class="js-bar">JavaScript</li>
             <li class="student-bar">Code The Dream Student: Intro to Programming</li>
+        </ul> -->
+    </section>
+    <section id="Projects">
+        <h2>Projects</h2>
+        <ul>
+            <!-- HW Instructions: "You need to add an empty <ul> element in this section; you will be adding your GitHub Projects via API call to this empty section using JavaScript later in this course." -->
         </ul>
     </section>
-
     <section id="Connect">
         <h2>Connect</h2>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/shontap">
-                    <img src="images/linkedinicon.png" alt="blue and white linkedin icon"> Connect with me on LinkedIn!
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com">
-                    <img src="images/facebookicon.png" alt="blue and white facebook icon"> Connect with me on Facebook!
-                </a>
-            </li>
-            <li>
-                <a href="https://www.github.com/shontechdev">
-                    <img src="images/githubicon.png" alt="black and grey github icon"> Connect with me on GitHub!
-                </a>
-            </li>
-        </ul>
+        <!-- <div class="connect"> -->
+            <ul class="flex-container-connect">
+                <li>
+                    <a href="https://www.linkedin.com/in/shontap">
+                        <img src="images/linkedinicon.png" alt="blue and white linkedin icon"> Connect with me on LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <img src="images/facebookicon.png" alt="blue and white facebook icon"> Connect with me on Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/shontechdev">
+                        <img src="images/githubicon.png" alt="black and grey github icon"> Connect with me on GitHub
+                    </a>
+                </li>
+            </ul>
+        <!-- </div> -->
     </section>
 </body>
-
 </html>
