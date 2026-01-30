@@ -1,9 +1,14 @@
+html {
+    scroll-padding: 145px; 
+    /* keeping titles from being hidden when anchors are clicked */
+}
+
 body {
     background-color: rgb(142, 221, 247);
     color: purple;
     text-shadow: 1px 1px 1px white;
     font-family: serif;
-    font-size: 1.25rem;
+    font-size: 20px;
     margin-top: 150px;
 }
 
@@ -37,10 +42,7 @@ a{
 
 h1 {
     font-family: "Rubik Storm", system-ui;
-    font-weight: 400;
     font-style: normal;
-    color: rgb(196, 9, 180);
-    text-align: center;
 }
 
 h1, h2 {
@@ -110,15 +112,21 @@ section {
     align-items: baseline;
 }
 
-.experience-title {
+.experience-job-title {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 900;
     margin: 0;
+    text-shadow: 1px 1px 4px rgb(142, 221, 247);
+}
+
+.experience-company-title {
+    font-size: 1rem;
+    font-weight: lighter;
 }
 
 .experience-dates {
     font-size: 0.95rem;
-    color: #666;
+
 }
 
 #Skills li {
