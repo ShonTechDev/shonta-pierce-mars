@@ -18,7 +18,7 @@ const thisYear = today.getFullYear();
 const copyright = document.createElement("p"); // <p></p>
 
 //Set the inner html with the copyright symbol, your name, and year
-copyright.innerHTML = `©️Shonta Pierce ${thisYear}` //set it to copyright and not inner
+copyright.innerHTML = `\u00A9 Shonta Pierce ${thisYear}` //set it to copyright and not inner
 
 //Append <p> fo the footer
 footer.appendChild(copyright);
