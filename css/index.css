@@ -316,16 +316,20 @@ section {
         text-wrap: calc();
     }
 
-    #Skills li {
+    #Skills ul {
         list-style: none;
         background-color: rgb(242, 220, 242);
         padding: 12px 16px;
         margin-bottom: 10px;
         border-radius: 6px;
         text-shadow: 1px 1px 4px rgb(142, 221, 247);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .html-bar {
+    /* .html-bar {
         width:400px;
     }
 
@@ -339,8 +343,7 @@ section {
 
     .student-bar {
         width: 1000px;
-    }
-
+    } */
 
 
     .flex-container-connect {
