@@ -6,9 +6,6 @@ const body = document.body;
 //Create a footer element
 const footer = document.createElement("footer"); // <footer></footer> //<-created
 
-//Append footer to body (adding it to the html to connect)
-body.appendChild(footer);
-
 //Create a new Date object
 const today = new Date();
 //Get the current year
@@ -23,9 +20,10 @@ copyright.innerHTML = `\u00A9 Shonta Pierce ${thisYear}` //set it to copyright a
 //Append <p> fo the footer
 footer.appendChild(copyright);
 
-//Center the footer
-footer.style.textAlign = "center";
-footer.style.fontSize = "0.75rem";
+//Append footer to body (adding it to the html to connect)
+body.appendChild(footer);
+
+
 
 
 // ------ SKILLS SECTION --------
@@ -47,3 +45,5 @@ for (let i = 0; i < skills.length; i++) {
     //Append the newly created element to the existing list
     skillsList.appendChild(skill);
 }
+
+
