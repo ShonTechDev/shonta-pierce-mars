@@ -62,14 +62,17 @@ messageForm.addEventListener("submit", function(event) {
     const messageList = messageSection.querySelector("ul");
 
     const newMessage = document.createElement("li");
-    newMessage.innerHTML = '<a href="mailto:${usersEmail}">${usersName}</a><span>${usersMessage}</span>';
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a><span>${usersMessage}</span>`;
 
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
     removeButton.type = "button";
 
     removeButton.addEventListener("click", function() {
-        const entry = removeButton.parentNode;
+        //learning note: using "this" keyword over remove button variable because the remove button variable is outside the function. 
+        // It is also better for testing & reduces side effects
+
+        const entry = this.parentNode;
         entry.remove();
     });
 
