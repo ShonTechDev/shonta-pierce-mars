@@ -46,6 +46,34 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
+// ---------------------- PROJECT SECTION --------------------
+
+fetch("https://api.github.com/users/shontechdev/repos")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(repositories) {
+        console.log("Repositories:", repositories);
+
+        const projectSection = document.getElementById("Projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+
+            project.innerText = repositories[i].name;
+
+            projectList.appendChild(project);
+        }
+    })
+    .catch(function(error) {
+        console.error("Error fetching repositories:", error);
+
+        const projectSection = document.getElementById("Projects");
+        projectSection.innerHTML += "<p>Unable to load projects at this time.</p>";
+    });
+
+
 
 // ------ MESSAGE SECTION --------
 const messageForm = document.querySelector('form[name="leave_message"]');
