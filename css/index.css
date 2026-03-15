@@ -15,7 +15,6 @@ body {
 }
 
 header nav ul {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -34,7 +33,6 @@ header nav ul {
 }
 
 nav a {
-    
     text-decoration: none;
 }
 
@@ -145,41 +143,31 @@ section {
     display: flex;
     flex-direction: column;
 }
-
 .html-bar {
     width:400px;
 }
-
 .css-bar {
     width: 300px;
 }
-
 .js-bar {
     width: 500px;
 }
-
 .student-bar {
     width: 1000px;
 }
-
-
-
 .flex-container-connect {
     display: flex;
     justify-content: center;
     flex-direction: row;
-
     background-color: rgb(251, 251, 251);
     margin: 0 15%;
     border: 1px purple solid;
     list-style: none;
     font-size: 1rem;
 }
-
 #Connect a {
     color: rgb(3, 153, 3);
 }
-
 #Connect img {
     height: 50px;
     width: auto;
@@ -216,40 +204,33 @@ section {
     padding: 1%;
     margin: 1%;
 }
-
-
-    #Message button {
-        width: 100%;
-        padding: 14px;
-        font-size: 1.1rem;
-        margin-top: 10px;
-        border: none;
-        border-radius: 6px;
-        background: purple;
-        color:white;
-        cursor: pointer;
-    }
-
-    #messages button {
-        padding: 8px 12px;
-        font-size: 1rem;
-        margin-left: 10px;
-        border: none;
-        border-radius: 4px;
-        background: magenta;
-        color:white;
-        cursor: pointer;
-    }
-
+#Message button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: purple;
+    color:white;
+    cursor: pointer;
+}
+#messages button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background: magenta;
+    color:white;
+    cursor: pointer;
+}
 footer {
     text-align: center;
     font-size: 0.75rem;
 }
-
 #Projects {
-
     /* display:flex; */
-
     padding: 4%;
     border-radius: 6px;
     margin: 4%;
@@ -257,9 +238,7 @@ footer {
     margin-left: 7%;
     font-size: 1rem;
     text-align: center;
-
     background-image: linear-gradient(to bottom right, purple, rgb(116, 235, 235) , steelblue);
-
     padding: 4%;
     border-radius: 6px;
     text-shadow: 1px 1px 4px rgb(142, 221, 247);
@@ -267,11 +246,9 @@ footer {
     width: 30%;
     margin-left: 30%;
 }
-
 #Projects h2 {
     text-shadow: 1px 1px 6px white;
 }
-
 #Projects ul {
     background-color: rgb(245, 215, 245);
     border-radius: 6px;
@@ -281,17 +258,12 @@ footer {
     font-weight: 500;
     text-transform: capitalize;
 }
-
-
-
-
 /* ============================================================================================================= */
 /* ===========Tablet style code =======*/
 /* ============================================================================================================= */
-
 @media (max-width: 820px) {
-   body {
-    font-size: 23px;
+    body {
+        font-size: 23px;
     }
 
     header nav ul {
@@ -300,9 +272,15 @@ footer {
         gap: 1rem;
         list-style-type: none;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.3rem;
         display: wrap;
-        width: 98%;
+        width: 88.5%;
+        height: 4rem;
+        text-align:center;
+    }
+
+    nav {
+        padding-bottom: 2rem;
     }
 
     h2 {
@@ -331,7 +309,6 @@ footer {
         width: 70%;
         padding: 2%;
         margin-left: 12.5%;
-
     }
 
     .experience {
@@ -428,40 +405,44 @@ footer {
         color:white;
         cursor: pointer;
     }
-
 }
 
 /* ============================================================================================================= */
 /* ===========Mobile style code =======*/
 /* ============================================================================================================= */
 @media (max-width: 375px) {
-   body {
-    font-size: 10px;
+    body {
+        font-size: 10px;
     }
 
     header nav ul {
+        position: relative;
         background-color: rgb(242, 220, 242);
-        height: 3.5rem;
+        height: 9rem;
         text-align: center;
         font-family: serif;
         font-weight: 600;
         position: fixed;
         list-style-type: none;
-        width: 88%;
+        width: 89%;
         padding-top: 0.6rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.5rem;
         font-size: 0.9rem;
-        margin: 0;
         top: 0;
         left: 0;
     }
 
     header nav li {
         flex: 1 1 auto;
-        text-align: center;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        padding-bottom: 6rem;
     }
 
     h2 {
@@ -492,7 +473,6 @@ footer {
 
     .experience-dates {
         font-size: 0.95rem;
-
     }
 
     .experience-description {
@@ -550,14 +530,14 @@ footer {
     }
 
     #Message {
-    padding: 4%;
-    border-radius: 6px;
-    margin: 4%;
-    width: 80%;
-    margin-left: 7%;
-    font-size: 1rem;
-    text-align: center;
-}
+        padding: 4%;
+        border-radius: 6px;
+        margin: 4%;
+        width: 80%;
+        margin-left: 7%;
+        font-size: 1rem;
+        text-align: center;
+    }
 
     #Message input, textarea {
         width: 95%;
