@@ -56,6 +56,24 @@ fetch("https://api.github.com/users/shontechdev/repos")
         console.log("Repositories:", repositories);
 
         const projectSection = document.getElementById("Projects");
+
+//------------------------------Open API Project link -----------------------------------
+        const featuredList = document.createElement("ul");
+        const featuredItem = document.createElement("li");
+
+        const featuredLink = document.createElement("a");
+        featuredLink.href = "https://github.com/ShonTechDev/shonta-pierce-mars-openAPI-project";
+        featuredLink.target = "_blank";
+        featuredLink.rel = "noopener noreferrer"; //researched tab security
+        featuredLink.innerText = "Open API Project (ft. The Art Institute of Chicago)";
+
+        featuredItem.appendChild(featuredLink);
+        featuredList.appendChild(featuredItem);
+
+        //Appended the list under Projects Heading
+        projectSection.insertBefore(featuredList, projectSection.querySelector("ul"));
+// ---------------------------------------------------------------------------------------
+
         const projectList = projectSection.querySelector("ul");
 
         for (let i = 0; i < repositories.length; i++) {
